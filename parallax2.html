@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        /* Styling the body */
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /* Styling the navigation buttons */
+        .nav-buttons {
+            position: left;
+            top: 10px;
+            left: 100px;
+            z-index: 1000;
+        }
+
+        .nav-buttons button {
+            margin: 5px;
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-buttons button:hover {
+            background-color: #555;
+        }
+
+        /* Logo styling */
+        .logo {
+            position: left;
+            top: 50px;
+            left: 50px;
+            z-index: 1000px;
+        }
+
+        .logo img {
+            width: 250px;
+            height: auto;
+        }
+
+        /* Styling the first parallax's height, width and background color */
+        .parallax-1 {
+            width: 100%;
+            height: 600px;
+            background: url('https://res.cloudinary.com/upwork-cloud/image/upload/c_scale,w_1000/v1707999892/catalog/1502083437185118208/m7ou6rrqrlv4bbpwyosp.webp');
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+
+        /* Styling the title of first parallax */
+        .parallax-1 h2 {
+            margin: auto;
+            position: center;
+            left: 5%;
+            transform: translateX(-50%);
+            top: 600px;
+            width: 1000px;
+            height: 32px;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            text-align: right;
+        }
+
+        /* Styling the second parallax's height, width and background color */
+        .parallax-2 {
+            width: 100%;
+            height: 600px;
+            background: url('https://d3uviallwqcn1r.cloudfront.net/0e17965e-f252-4e6e-ba65-d907d42c7d5d.png');
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+
+        /* Styling the title of second parallax */
+        .parallax-2 h2 {
+            margin: auto;
+            position: right;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 300px;
+            width: 250px;
+            height: 60px;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            font-family: Verdana;
+        }
+
+        /* Styling the content or paragraph */
+        .para-1 {
+            padding: 50px;
+            background-color: black;
+            color: white;
+            font-size: 17px;
+        }
+
+        .para-2 {
+            text-align: center;
+            padding: 25px;
+            font-size: 17px;
+            font-family: Verdana;
+            background-color: black;
+            color: white;
+        }
+
+        /* Styling the additional sections */
+        .section-title {
+            text-align: center;
+            font-size: 25px;
+            margin: 20px 0;
+            color: #333;
+        }
+
+        .web-design {
+            padding: 50px;
+            background-color: #f4f4f4;
+            color: #333;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Logo -->
+    <div class="logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6AvQ3b4WgXDMv8G2_ZX6pfKYKpfW2ecM5hg&s" alt="Logo">
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="nav-buttons">
+        <button onclick="scrollToSection('about')">About</button>
+        <button onclick="scrollToSection('achievements')">Achievements</button>
+    </div>
+
+    <!-- Giving title of the first parallax -->
+    <div class="parallax-1">
+        <h2 id="about">TUSHAR GUPTA </h2>
+    </div>
+
+    <!--Content of first parallax -->
+    <div class="para-1">
+        <p>
+            Thank you for showing interest, here is a quick story of me and this website. My programming journey started
+            back in 2019, few months before I started studying CSE in LNCT Bhopal. I am currently in my second year and
+            doing Technical Content Writing Internship at GeeksForGeeks. I like coding all kinds of problems from the
+            very basic ones like adding numbers to the complex ones like competitive programming problems. I love making
+            projects and games. In fact, this website is one of my Web Development Projects built using HTML and CSS.<br><br>
+            Languages known: C Language, C++, JAVA, Python, JavaScript, MySQL.<br> IT Constructs: Data Structures and
+            Algorithm, OOP, HTML, CSS, LINUX, and Git & GitHub.
+        </p>
+    </div>
+
+    <!-- Giving title of the second parallax -->
+    <div class="parallax-2">
+        <h2 id="about">AYUSH KUMAR YADAV</h2>
+    </div>
+    <div class="parallax-2">
+        <h2 id="achievements">PROJECTS</h2>
+    </div>
+
+    <!--Content of second parallax -->
+    <div class="para-2">
+        <p>
+            &nbsp; Calendar &nbsp; Tic-Tac-Toe &nbsp; Quiz Game &nbsp; Survey Form &nbsp; Chat Bot in C &nbsp; Tribute
+            Webpage &nbsp; Portfolio Website &nbsp; Guess the Number &nbsp; Rock Paper Scissor &nbsp; Travel Management
+            System &nbsp; Random Password Generator &nbsp; Different Management Systems
+        </p>
+    </div>
+
+    <!-- Adding a new section -->
+    <div class="web-design">
+        <h2 class="section-title">WEB DESIGNING OVERVIEW</h2>
+        <p>
+            Web designing is a key aspect of creating user-friendly, aesthetically pleasing, and functional websites. It
+            involves several elements such as layout design, color theory, typography, and responsive design.
+            Understanding the principles of design and user experience (UX) is essential for developing effective web
+            applications.
+        </p>
+        <p>
+            This project leverages technologies like HTML for structuring content and CSS for styling the page. The
+            "parallax effect" implemented here adds a modern touch, enhancing visual appeal and engaging the users.
+            Furthermore, advanced techniques like responsive design ensure that the website functions seamlessly across
+            different devices and screen sizes.
+        </p>
+        <p>
+            Future enhancements could include adding JavaScript for interactivity, integrating a backend for dynamic
+            content, or exploring frameworks like React or Angular to build scalable web applications.
+        </p>
+    </div>
+
+    <!-- Giving title of the achievements parallax -->
+    <div class="parallax-1">
+        <h2>ACHIEVEMENTS</h2>
+    </div>
+
+    <div class="para-2">
+        <p>
+            &nbsp; Technical Content Writer Intern at ABES ENGINNERING COLLEGE &nbsp; Microsoft Learn Student
+            Ambassador - Beta &nbsp; Participant in GirlScript Summer of Code 2021 &nbsp; Mentored HackTX Hackathon
+        </p>
+    </div>
+
+    <script>
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+</body>
+
+</html>
+
